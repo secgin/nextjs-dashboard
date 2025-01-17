@@ -11,13 +11,12 @@ export default async function CardWrapper() {
 
     return (
         <>
-         <Card title="Collected" value={totalPaidInvoices} type="collected" />
-        <Card title="Pending" value={totalPendingInvoices} type="pending" />
-        <Card title="Total Invoices" value={numberOfInvoices.toString()} type="invoices" />
+         <Card title="Collected" value={totalPaidInvoices} />
+        <Card title="Pending" value={totalPendingInvoices} />
+        <Card title="Total Invoices" value={numberOfInvoices.toString()} />
         <Card
           title="Total Customers"
           value={numberOfCustomers.toString()}
-          type="customers"
         />
         </>
     );
